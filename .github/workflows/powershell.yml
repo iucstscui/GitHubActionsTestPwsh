@@ -10,7 +10,9 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Display hello world
-        run: echo "hello world pwsh"
+        run: |
+          write-host "hello world pwsh"
+          $PSVersionTable
         shell: pwsh
 
       - name: run ps1File
