@@ -9,13 +9,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Display hello world
+      - name: Display hello world pwsh
         run: |
           write-host "hello world pwsh"
           $PSVersionTable
         shell: pwsh
 
-      - name: Display hello world
+      - name: Display hello world powershell
         run: |
           write-host "hello world pwsh"
           $PSVersionTable
