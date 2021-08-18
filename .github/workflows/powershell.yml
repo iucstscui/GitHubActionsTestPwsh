@@ -21,10 +21,10 @@ jobs:
           $PSVersionTable
         shell: powershell
 
-      - name: run ps1File
+      - name: run ps1File cmd
         run: powershell -NoProfile -ExecutionPolicy Unrestricted ./helloworld.ps1
         shell: cmd
 
-      - name: run ps1File
+      - name: run ps1File pwsh
         run: powershell -NoProfile -ExecutionPolicy Unrestricted ./helloworld.ps1
         shell: pwsh
