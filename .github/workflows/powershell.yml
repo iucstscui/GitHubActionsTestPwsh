@@ -15,6 +15,12 @@ jobs:
           $PSVersionTable
         shell: pwsh
 
+      - name: Display hello world
+        run: |
+          write-host "hello world pwsh"
+          $PSVersionTable
+        shell: powershell
+
       - name: run ps1File
         run: powershell -NoProfile -ExecutionPolicy Unrestricted ./helloworld.ps1
         shell: cmd
