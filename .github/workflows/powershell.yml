@@ -1,6 +1,8 @@
 name: PowerShellTest
 
-on: push
+on: 
+  push:
+  workflow_dispatch:
 
 jobs:
   first_job:
